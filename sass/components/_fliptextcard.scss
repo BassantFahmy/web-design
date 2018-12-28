@@ -1,0 +1,44 @@
+.fliptextcard {
+    position: relative;
+    width: 30rem;
+    height: 21rem;
+    &__images {
+        position: absolute;
+        transition: 1s;
+        transform-style: preserve-3d;
+        height: 21rem;
+        width: 30rem;
+    }
+    &__frontimg2 {
+        position: absolute;
+        
+        backface-visibility: hidden;
+        height: 21rem;
+        width: 30rem;
+        background-position: center;
+    }
+    &__text {
+        position: absolute;
+        background-image: url("../images/bgwhite.jpg");
+        text-align: center;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        height: 21rem;
+        width: 30rem;
+        background-position: center;
+    }
+    &__img1{
+        background-image: url("../images/splash2.jpg");
+    }
+    &__img2{
+        background-image: url("../images/splash_home_portfolio.jpg");
+    }
+    &__img3{
+        background-image: url("../images/splash1.jpg");
+    }
+    
+}
+
+.fliptextcard__images:hover {
+    transform: rotateY(180deg);
+}

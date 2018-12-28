@@ -1,0 +1,18 @@
+.hovercard {
+    position: relative;
+    height: 20rem; 
+    width: 20rem;
+    cursor: pointer;
+    &__img1 {
+        position: absolute;
+    }
+    &__img2 {
+        position: absolute;
+        visibility: hidden;
+        z-index: 2;
+    }
+}
+
+.hovercard:hover .hovercard__img2 {
+    visibility: visible;
+}

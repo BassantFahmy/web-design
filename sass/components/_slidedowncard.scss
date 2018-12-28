@@ -1,0 +1,28 @@
+.slidedowncard {
+    height: 20rem;
+    width: 40.5rem;
+    @extend .slidecard;
+    
+    &__layout {
+        position: absolute;
+        color: $white;
+        z-index: 1;
+        height: 10rem;
+        width: 100%;
+        top: -45%;
+        transition: 1s;
+    }
+    &__img {
+        transition: 1s;
+        top: -1rem;
+        position: absolute;
+    }
+}
+
+.slidedowncard:hover .slidedowncard__layout {
+    transform: translateY(100%);
+}
+
+.slidedowncard:hover .slidedowncard__img {
+    transform: translateY(60%);
+}

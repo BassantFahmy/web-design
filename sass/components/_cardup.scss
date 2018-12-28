@@ -1,0 +1,45 @@
+.cardup {
+    position: relative;
+    width: $card-width;
+    height: $card-height;
+    overflow: hidden;
+    text-align: center;
+    &__layout {
+        @extend .cardcontainer;
+        background-color: $transparentwhite;
+        opacity: 0;
+    }
+    &__img {
+        @extend .card__img;
+    }
+    &__img1 {
+        background-image: url("../images/splash3jpg.jpg");
+    }
+    &__img2 {
+        background-image: url("../images/splash5jpg.jpg");
+    }
+    &__img3 {
+        background-image: url("../images/splash4.jpg");
+    }
+    &__img4 {
+        background-image: url("../images/splash6.jpg");
+    }
+    &__footer {
+        display: flex;
+        z-index: 2;
+        position: absolute;
+        bottom: -8rem;
+        text-align: center;
+        transition: 1s;
+        transform: translateY(0);
+    }
+    &:hover .cardup__layout {
+        opacity: 1;
+    }
+    &:hover .cardup__img {
+        transform: translateY(-45px);
+    }
+    &:hover .cardup__footer {
+        transform: translateY(-8rem);
+    }
+}

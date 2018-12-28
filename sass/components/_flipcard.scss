@@ -1,0 +1,32 @@
+.flipcard {
+    position: relative;
+    width: 20rem;
+    &__images {
+        position: absolute;
+        transition: 1s;
+        transform-style: preserve-3d;
+        height: 21rem;
+        width: 20rem;
+    }
+    &__frontimg {
+        position: absolute;
+        background-image: url("../images/flipme.png");
+        backface-visibility: hidden;
+        height: 21rem;
+        width: 20rem;
+    }
+    &__backimg {
+        position: absolute;
+        background-image: url("../images/spotontarget.png");
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        height: 21rem;
+        width: 20rem;
+    }
+}
+
+.flipcard__images:hover {
+    transform: rotateY(180deg);
+}
+
+/*--------------------------------------*/

@@ -1,0 +1,23 @@
+.sliderightcard {
+    height: 20rem;
+    width: 40.5rem;
+    @extend .slidecard;
+    &__layout {
+        @extend .layout;
+        transform: translateX(-100%);
+    }
+    &__img {
+        transition: 1s;
+        top: 0.3rem;
+        left: 0.6rem;
+        position: absolute;
+    }
+}
+
+.sliderightcard:hover .sliderightcard__layout {
+    transform: translateX(0%);
+}
+
+.sliderightcard:hover .sliderightcard__img {
+    transform: translateX(100%);
+}

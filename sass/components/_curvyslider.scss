@@ -1,0 +1,74 @@
+.waterslider {
+    width: 100%;
+    height: 50rem;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../images/curvy-slider-water-background.jpg");
+    position: relative;
+    &-fish {
+        position: absolute;
+        width: 6rem;
+        animation-name: halfcircle;
+        animation-duration: 7s;
+        top: 31rem; //left: 40%;
+        left: 56%;
+        transform: rotateZ(-20deg);
+        opacity: 0.6;
+    }
+    &-fish2 {
+        position: absolute;
+        width: 6rem;
+        animation-name: downleft;
+        animation-duration: 8s;
+        top: 32rem;
+        opacity: 0.7;
+        left: 42%;
+    }
+    &-fish3 {
+        position: absolute;
+        width: 6rem;
+        opacity: 0.5;
+        transform: rotateZ(50deg);
+        animation-name: quartercircle;
+        animation-duration: 8s;
+        top: 35rem;
+        left: 44%;
+    }
+    &-fish4 {
+        position: absolute;
+        width: 6rem;
+        opacity: 0.8;
+        animation-name: upleft;
+        animation-duration: 8s;
+        top: 30rem;
+        left: 48%;
+    }
+    &-balloon1 {
+        position: absolute;
+        top: -10rem;
+        left: 20rem;
+        animation-name: downup;
+        animation-duration: 9s;
+    }
+    &-balloon2 {
+        position: absolute;
+        top: -25rem;
+        left: 100rem;
+        animation-direction: forwards;
+        animation-name: downup2;
+        animation-duration: 9s;
+        animation-delay: 0.9s;
+    }
+    &-balloon3 {
+        position: absolute;
+        left: -14rem;
+        animation-direction: forwards;
+        width: 14.2rem;
+        height: 20.5rem;
+        animation-name: leftup;
+        animation-duration: 9s;
+        animation-delay: 0.5s;
+    }
+}

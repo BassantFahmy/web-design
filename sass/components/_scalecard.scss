@@ -1,0 +1,58 @@
+.cardcontainer {
+    position: absolute;
+    width: $card-width;
+    height: $card-height;
+    transition: 0.7s;
+}
+
+.card__img {
+    @extend .cardcontainer;
+    background-size: cover;
+    background-position: center;
+}
+
+/*-------------------------scalecard----------------------------*/
+
+.scalecard {
+    position: relative;
+    width: $card-width;
+    height: $card-height;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    &__img {
+        @extend .card__img;
+    }
+    &__layout {
+        @extend .cardcontainer;
+        background-color: $transparentwhite;
+        opacity: 0;
+    }
+    &__text {
+        @include block-colors($primary-opacity, $white);
+        position: absolute;
+        left: 900%;
+        transition: 1s;
+        width: 100%;
+    }
+    &:hover .scalecard__layout {
+        opacity: 1;
+        transform: rotateZ(360deg);
+    }
+    &:hover .scalecard__img {
+        transform: scale(1.5);
+    }
+    &:hover .scalecard__text {
+        left: 0px;
+        font-size: 2.5rem;
+    }
+    &__img1 {
+        background-image: url("../images/fork.jpg");
+    }
+    &__img2 {
+        background-image: url("../images/chair.jpg");
+    }
+    &__img3 {
+        background-image: url("../images/laptop.jpg");
+    }
+}

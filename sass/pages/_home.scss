@@ -1,0 +1,32 @@
+.section{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: $padding-xl;
+    padding-bottom: $padding-xl;
+}
+
+.section1{
+    background-color: $light-gray2;
+}   
+.section2{
+    background-color: $white;
+    display: flex;
+    
+}
+.bgphoto{
+    background-image: url("../images/3.jpg");
+    height: 40rem;
+    background-attachment: fixed;
+    text-align: center;
+    &__title{
+        color: $primary;
+    }
+    &__subtitle{
+        color:$white;
+    }
+}
+.section3{
+    background-color: $light-gray2;
+}

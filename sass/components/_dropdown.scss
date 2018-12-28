@@ -1,0 +1,30 @@
+.homebtn {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    text-align: center;
+    top: 7rem;
+    width: 13rem;
+    transition: 0.2s;
+    visibility: hidden;
+    z-index: 2;
+    & span {
+        background-color: $light-gray2;
+        & .dropdown__item {
+            display: block;
+            @include block-colors($light-gray2, $white);
+        }
+    }
+}
+
+span:hover .dropdown__item {
+    @include block-colors($white, $light-gray);
+}
+
+.navbar__list__dropdown:hover .dropdown {
+    // transform: translateY(4.3rem) rotateZ(360deg); 
+    transform: translateY(-1rem);
+    visibility: visible;
+}

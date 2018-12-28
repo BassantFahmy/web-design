@@ -1,0 +1,23 @@
+.slider{
+overflow: hidden;
+.slideleftcard { grid-area: start1; }
+.sliderightcard { grid-area: chit; }
+.hovercard { grid-area: hoverme; }
+.flipcard { grid-area: flipme; }
+.dots { grid-area: dots; }
+.dots2 { grid-area: dots2; }
+.slidedowncard { grid-area: brain; }
+.downdots { grid-area: downdots; }
+
+
+
+display: grid;
+// grid-template-columns: repeat(7,14.28%);
+grid-template-columns: repeat(40.5rem,40.5rem,20rem,20rem,20rem,20rem,40rem,20rem);
+grid-template-areas:
+'start1 start1 chit chit flipme dots dots2'
+'start1 start1 hoverme brain brain downdots dots2'
+;
+background-image: url(../images/greybg.jpg);
+
+}

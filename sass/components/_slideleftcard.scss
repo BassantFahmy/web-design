@@ -1,0 +1,41 @@
+.layout {
+    position: absolute;
+    height: 40rem;
+    width: 100%;
+    color: $white;
+    top: 0px;
+    z-index: 1;
+    transition: 1s;
+    padding-top: $padding-medium;
+    padding-bottom: $padding-medium;
+    padding-left: $padding-medium;
+    padding-right: $padding-medium;
+}
+
+.slidecard {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 40.5rem;
+}
+
+.slideleftcard {
+    height: 40rem;
+    @extend .slidecard;
+    &__layout {
+        @extend .layout;
+        transform: translateX(100%);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    &__img {
+        transition: 1s;
+    }
+}
+
+.slideleftcard:hover .slideleftcard__layout {
+    transform: translateX(0%);
+}
+
+.slideleftcard:hover .slideleftcard__img {
+    transform: translateX(-100%);
+}

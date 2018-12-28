@@ -1,0 +1,101 @@
+
+@keyframes halfcircle{
+
+    0%{
+        top: 290px;
+        left: 40%;
+        transform: rotateZ(50deg);
+
+    }
+    10%{
+        left: 41%;
+    }
+    25%{
+        left: 44%;
+    }
+    
+    
+     50%{
+         top: 370px;
+         left: 48%;
+         transform: rotateZ(0deg);
+
+     }
+
+     
+    
+    100%{ 
+        top: 310px;
+        left: 56%;
+        transform: rotateZ(-20deg);
+
+    }
+
+
+
+}
+@keyframes downleft{
+    0%{
+        top: 28rem;
+        left: 50%;
+
+    }
+    100%{
+        top: 32rem;
+        left: 42%;
+    }
+    
+}
+@keyframes quartercircle{
+    0%{
+        top: 260px;
+        left: 40%;
+
+    }
+    100%{
+        top: 350px;
+        left: 44%;
+    }
+}
+@keyframes upleft{
+    0%{
+        top: 350px;
+        left: 50%;}
+    100%{
+        top: 300px;
+        left: 48%;
+    }    
+}
+@keyframes downup{
+    0%{
+        top: 36rem;
+        left: 40rem;}
+    100%{
+        top: -10rem;
+        left: 20rem;
+    } 
+}
+@keyframes downup2{
+    0%{
+        top: 20rem;
+        left: 125rem;}
+    100%{
+        top: -25rem;
+        left: 100rem;
+    } 
+}
+@keyframes leftup{
+    0%{
+        top: 20rem;
+        left: -10rem;}
+    100%{
+        top: -25rem;
+        left: 10rem;
+    } 
+}
+@keyframes bounce{
+    
+    0%{
+        top:0;
+    }
+}

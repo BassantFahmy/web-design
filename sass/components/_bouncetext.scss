@@ -1,0 +1,26 @@
+.bouncetext {
+    width: 100%;
+    height: 40rem;
+    background-color: skyblue;
+    &__title {
+        text-align: center;
+        font-size: 7rem;
+        background-color: skyblue;
+    }
+    &__char {
+        position: relative;
+        top: 20rem;
+        animation-name: bounce;
+        animation-duration: 1s; //animation-iteration-count: infinite;
+        background-color: skyblue;
+        color: $white;
+    }
+}
+
+$start:0.1s;
+@for $i from 2 through 7 {
+    h2 span:nth-child(#{$i}) {
+        animation-delay: 0.5s + $start;
+        $start: $start + 0.1;
+    }
+}
