@@ -1,32 +1,120 @@
-.section{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-top: $padding-xl;
-    padding-bottom: $padding-xl;
+section {
+    .container-fluid,
+    .container {
+        &.no-gutters {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
 }
 
-.section1{
-    background-color: $light-gray2;
-}   
-.section2{
-    background-color: $white;
-    display: flex;
+.section1 {
+    background-color: $secondary;
+    img {
+        width: 331px !important;
+    }
     
 }
-.bgphoto{
-    background-image: url("../images/3.jpg");
-    height: 40rem;
-    background-attachment: fixed;
+.section {
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        font-family: "Montserrat";
+        line-height: 60px;
+        text-transform: none;
+        letter-spacing: 0px;
+    }
+}
+.section3 {
+  overflow: hidden;
+    
+}
+.section5 {
+    background-color: $primary;
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        font-family: "Montserrat";
+        line-height: 60px;
+        text-transform: none;
+        letter-spacing: 0px;
+   
+      
+        color: $white;
+    }
+}
+
+.section6 {
+    background-color: $secondary;
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        font-family: "Montserrat";
+        line-height: 60px;
+        text-transform: none;
+        letter-spacing: 0px;
+    }
+    img {
+        width: 210px !important;
+    }
+}
+
+.section7 {
+    background-color: $secondary;
     text-align: center;
-    &__title{
-        color: $primary;
-    }
-    &__subtitle{
-        color:$white;
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        font-family: "Montserrat";
+        line-height: 60px;
+        text-transform: none;
+        letter-spacing: 0px;
     }
 }
-.section3{
-    background-color: $light-gray2;
+
+.section8 {
+    background-color: $primary;
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        font-family: "Montserrat";
+        line-height: 60px;
+        text-transform: none;
+        letter-spacing: 0px;
+        color: $white;
+    }
 }
+
+.section9 {
+    background-color: $secondary;
+    overflow: hidden;
+    text-align: center;
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        font-family: "Montserrat";
+        line-height: 60px;
+        text-transform: none;
+        letter-spacing: 0px;
+    }
+}
+
+.section11 {
+    background-color: $secondary;
+    text-align: center;
+}
+
+.section12 {
+    background-color: $secondary;
+}
+
+.section13 {
+    background-color: $primary;
+}
+

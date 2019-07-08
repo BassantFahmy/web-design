@@ -1,0 +1,30 @@
+$primary:#303030;
+$secondary:#E9E9E9;
+nav {
+    font-size: 12px;
+    font-style: normal;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    height: 50px;
+}
+
+.navbar {
+    padding: 2.5rem 1rem !important;
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: #303030 !important;
+    transition: background-color 200ms linear;
+    a {
+        color: #E9E9E9;
+    }
+}
+
+nav ul {
+    display: block;
+    margin: auto;
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"

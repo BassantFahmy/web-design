@@ -1,5 +1,13 @@
-.btn {
+.mybtn {
     display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 45px;
+    letter-spacing: 2px;
+    font-size: 12px;
+    
+    
     &--rectangle {
         padding-right: $padding-small;
         padding-left: $padding-small;
@@ -9,8 +17,8 @@
     &--rectangle2 {
         padding-right: $padding-lg;
         padding-left: $padding-lg;
-        padding-top: $padding-medium;
-        padding-bottom: $padding-medium;
+        // padding-top: $padding-small;
+        // padding-bottom: $padding-small;
     }
     &--dark {
         @include block-colors($gray-dark-1, $light-gray);
@@ -30,14 +38,21 @@
             @include block-colors($white, $primary);
         }
     }
-    &--fixed {
-        position: fixed;
-        top: 35%;
-        right: 0px;
-        z-index: 2;
+    &--greengray{
+       
+        @include block-colors($greengray, $white);
+        &:hover {
+            @include block-colors($white, $dark);
+        }
     }
-    &--fixed--bottom {
-        top: 53%;
-        ;
+
+    &--gold{
+       
+        @include block-colors($gold, $white);
+        &:hover {
+            @include block-colors($gold-dark, $white);
+        }
     }
+
+
 }

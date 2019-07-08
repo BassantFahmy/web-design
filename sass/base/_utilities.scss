@@ -41,9 +41,54 @@
 .pl-lg{
     padding-left:$padding-lg;
 }
+.p-lg{
+    padding:$padding-lg;
+}
+.pt-lg{
+    padding-top:$padding-lg;
+}
+.pb-lg{
+    padding-bottom:$padding-lg;
+}
+.p-xl{
+    padding:$padding-xl;
+}
+.p-xxl{
+    padding:$padding-xxl;
+}
+.pt-xxl{
+    padding-top:$padding-xxl;
+}
+.pb-xxl{
+    padding-bottom:$padding-xxl;
+}
+.pt-xxxl{
+    padding-top:$padding-xxxl;
+}
+.pb-xxxl{
+    padding-bottom:$padding-xxxl;
+}
 .mb-s{
     margin-bottom: $margin-small;
 }
 .mt-s{
     margin-top: $margin-small;
+}
+
+.text-black{
+    color: $dark;
+}
+.text-gray{
+    color: $light-gray;
+}
+.gray--bg{
+    background-color: $gray-dark3;
+}
+
+.grayborder{
+    border: 0.6px solid $light-gray !important;
+
+}
+.gold-bg{
+    background-color: $gold;
 }
